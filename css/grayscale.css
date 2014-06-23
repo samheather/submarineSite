@@ -176,7 +176,13 @@ a:focus {
 	width: 30%;
 }
 
-@media (max-height:550px) or (max-width:767px) {
+@media (max-height:640px) {
+	.intro-periscope {
+		width: 0%;
+	}
+}
+
+@media (max-width:767px) {
 	.intro-periscope {
 		width: 0%;
 	}
