@@ -131,7 +131,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/intro-bg-backup.jpg) no-repeat bottom center scroll;
+    background: url(../img/intro-bg-small.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -139,7 +139,7 @@ a:focus {
     -o-background-size: cover;
 }
 
-@media (min-width:767px) and (min-height:767px) {
+@media (min-width:767px) /* and (min-height:767px) */ {
 	.intro {
 		display: table;
 		width: 100%;
@@ -159,6 +159,27 @@ a:focus {
 .intro-body {
     display: table-cell;
     vertical-align: middle;
+}
+
+.intro-periscope-center-block {
+	position: absolute;
+	left: 50%;
+	bottom:2px;
+}
+
+.intro-periscope-holder {
+	position: relative;
+	left: -50%;
+}
+
+.intro-periscope {
+	width: 30%;
+}
+
+@media (max-height:550px) or (max-width:767px) {
+	.intro-periscope {
+		width: 0%;
+	}
 }
 
 .brand-heading {
