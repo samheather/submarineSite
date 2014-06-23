@@ -289,6 +289,21 @@ a:focus {
     padding-top: 100px;
 }
 
+
+.iphone-image {
+	width: 130%;
+	position: relative;
+	left: -15%;
+
+}
+
+@media(min-width:767px) {
+	.iphone-image {
+		width: 100%;
+		left: 0%;
+	}
+}
+
 .download-section {
     width: 100%;
     padding: 50px 0;
